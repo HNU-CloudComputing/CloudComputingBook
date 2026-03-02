@@ -81,7 +81,7 @@
 
 ## 👤 编者信息
 
-- **核心编者 / 架构设计：** 陈果、徐方林、胡文举、庞海鑫、谢先衍、贺臻、张道平
+- **核心编者 / 架构设计：** [陈果](https://grzy.hnu.edu.cn/site/index/chenguo)、徐方林、胡文举、庞海鑫、谢先衍、贺臻、张道平
   - *所属单位*：HNU GuoLab（湖南大学）
   - *联系邮箱*：`guochen@hnu.edu.cn`, `xfl825@hnu.edu.cn`
 
