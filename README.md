@@ -24,19 +24,19 @@
 
 1. **原型阶段（单体架构闭环）：** 确立客户端-服务端（CS）架构。实现基础的权威裁决与消息化交互，跑通双人同图对战的最小可行性闭环。
 
-   ![原型阶段](.\figures\sec1\intro-phase2-fixed1.png)
+   ![原型阶段](./figures/sec1/intro-phase2-fixed1.png)
 
 2. **并发优化阶段（高性能单体）：** 引入 Goroutine 轻量级线程、细粒度锁机制与资源池化技术，突破单机处理瓶颈，实现同一地图内的海量并发。
 
-   ![并发优化阶段](.\figures\sec1\intro-phase3-fixed1.png)
+   ![并发优化阶段](./figures/sec1/intro-phase3-fixed1.png)
 
 3. **分布式阶段（多机协作与服务拆分）：** 打破单机内存与 CPU 限制，实现多图多服。解决跨服通信、状态无缝迁移以及基于日志（持久化）的容错恢复。
 
-   ![分布式阶段](.\figures\sec1\intro-phase4-fixed1.png)
+   ![分布式阶段](./figures/sec1/intro-phase4-fixed1.png)
 
 4. **容器化与云原生阶段（调度中枢）：** 全面引入 Docker 与 Kubernetes (K8s)。将服务打包为标准副本，实现业务侧的弹性扩缩容、故障自愈与自动化运维。
 
-   ![容器化阶段](.\figures\sec1\intro-phase5-fixed1.png)
+   ![容器化阶段](./figures/sec1/intro-phase5-fixed1.png)
 
 ------
 
@@ -67,7 +67,7 @@
 
 ## 🛠️ 全栈技术图谱
 
-![全技术栈图谱](.\figures\sec1\full-stack-tech-map.png)
+![全技术栈图谱](./figures/sec1/full-stack-tech-map.png)
 
 为了支撑高并发、强实时与高可用的目标，本项目精选了以下现代云原生技术栈：
 
