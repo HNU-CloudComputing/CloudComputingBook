@@ -8,6 +8,15 @@
 
 ------
 
+### 📖 在线阅读
+
+为了提供更佳的学习与查阅体验，本项目已上线完整内容，并提供以下两种格式供读者根据习惯自由选择：
+
+- 📄 **[在线阅读（PDF 文档版）](https://ashionial.github.io/CloudComputingBookPresentation/)**
+- 🔗 **[在线阅读（Markdown 网页版）](https://ashionial.github.io/CloudComputingMarkdown/)**
+
+------
+
 ## 🎯 核心挑战与解决目标
 
 游戏场景天然放大了云计算需要解决的三大核心难题。本项目将带你逐一击破：
