@@ -1,0 +1,143 @@
+\documentclass[12pt, a4paper]{article}
+
+% 中文支持包
+\usepackage[UTF8]{ctex}  % 主要中文支持包
+\usepackage{xeCJK}       % 额外的中文支持
+
+\usepackage{tikz}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings, skins, breakable}
+\usepackage{booktabs}
+\usepackage{xurl}
+% 页面设置
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing  % 1.5倍行距
+
+% 页眉页脚设置
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\pagestyle{fancy}
+\fancyhf{} % 清除所有页眉页脚
+\fancyfoot[C]{\today} % 底部居中显示日期
+\fancyfoot[R]{\thepage} % 底部右侧显示页码
+\renewcommand{\headrulewidth}{0pt} % 去掉页眉横线
+\setcounter{secnumdepth}{3}
+
+% 数学包
+\usepackage{amsmath, amssymb, amsthm}
+
+% 图形和颜色
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{float}
+
+% 链接和参考文献
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={云计算原理与实践：以在线游戏为载体},
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+% 代码样式
+\definecolor{CodeSkyFrame}{HTML}{A8D8F2}
+\definecolor{CodeSkyTitle}{HTML}{C7E8F8}
+\definecolor{CodeSkyBg}{HTML}{F8FCFF}
+\definecolor{CodeSkyKeyword}{HTML}{3E93C8}
+\definecolor{CodeSkyString}{HTML}{3B9FA8}
+\definecolor{CodeInk}{HTML}{1F2937}
+\definecolor{CodeMuted}{HTML}{6B7280}
+\definecolor{CodeComment}{HTML}{64748B}
+
+\lstdefinelanguage{PseudoGo}{
+    morekeywords={for,if,else,return,continue,break,sleep,ceil,clamp,float},
+    sensitive=true,
+    morecomment=[l]{//},
+    morestring=[b]"
+}
+
+\lstdefinelanguage{yaml}{
+    morekeywords={true,false,null,yes,no},
+    sensitive=false,
+    morecomment=[l]{\#},
+    morestring=[b]',
+    morestring=[b]"
+}
+
+\lstdefinestyle{codeblock}{
+    basicstyle=\ttfamily\footnotesize\color{CodeInk},
+    numbers=left,
+    numberstyle=\tiny\color{CodeMuted},
+    numbersep=8pt,
+    xleftmargin=1.6em,
+    aboveskip=0pt,
+    belowskip=0pt,
+    lineskip=0pt,
+    commentstyle=\itshape\color{CodeComment},
+    keywordstyle=\bfseries\color{CodeSkyKeyword},
+    stringstyle=\color{CodeSkyString},
+    breaklines=true,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false
+}
+
+\newtcblisting{pseudocodebox}[2][]{
+    enhanced,
+    listing engine=listings,
+    listing only,
+    listing options={style=codeblock, language=PseudoGo},
+    title={#2},
+    colback=CodeSkyBg,
+    colframe=CodeSkyFrame,
+    colbacktitle=CodeSkyTitle,
+    coltitle=CodeInk,
+    fonttitle=\small\bfseries,
+    boxrule=0.4pt,
+    arc=1.2mm,
+    left=2mm,
+    right=2mm,
+    top=1.2mm,
+    bottom=1.2mm,
+    before skip=6pt plus 2pt minus 1pt,
+    after skip=6pt plus 2pt minus 1pt,
+    #1
+}
+
+% 统一 tcolorbox 视觉风格：用于代码示例框与少量提示框（全书一致）
+\tcbset{
+    enhanced,
+    colback=CodeSkyBg,
+    colframe=CodeSkyFrame,
+    colbacktitle=CodeSkyTitle,
+    coltitle=CodeInk,
+    fonttitle=\small\bfseries,
+    boxrule=0.4pt,
+    arc=1.2mm,
+    left=2mm,
+    right=2mm,
+    top=1.2mm,
+    bottom=1.2mm,
+    before skip=6pt plus 2pt minus 1pt,
+    after skip=6pt plus 2pt minus 1pt,
+}
+
+% comment样式
+\newcommand{\xfl}[1]{\textcolor{blue}{#1}}
+\newcommand{\previos}[1]{\textcolor{gray}{#1}}
+
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{newunicodechar}
+
+% 兼容部分Unicode符号：避免字体缺字导致步骤标号显示为空白
+\newunicodechar{①}{\textcircled{1}}
+\newunicodechar{②}{\textcircled{2}}
+\newunicodechar{③}{\textcircled{3}}
+\newunicodechar{④}{\textcircled{4}}
