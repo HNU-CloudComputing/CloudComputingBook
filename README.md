@@ -12,8 +12,8 @@
 
 为了提供更佳的学习与查阅体验，本项目已上线完整内容，并提供以下两种格式供读者根据习惯自由选择：
 
-- 📄 **[在线阅读（PDF 文档版）](https://gitee.com/hnu-cloudcomputing/cloud-computing-book-pdf)**
-- 🔗 **[在线阅读（Markdown 网页版）](https://gitee.com/hnu-cloudcomputing/cloud-computing-markdown-book)**
+- 📄 **[在线阅读（PDF 文档版）](https://hnu-cloudcomputing.github.io/CloudComputingPDF/)**
+- 🔗 **[在线阅读（Markdown 网页版）](https://hnu-cloudcomputing.github.io/CloudComputingMarkdown/)**
 
 ------
 
